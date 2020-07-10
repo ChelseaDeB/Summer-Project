@@ -24,9 +24,8 @@ with urllib.request.urlopen(req) as f:
     
 """ 
     This function is used to convert a Uniprot Id into a NCBI protein 
-    ID. ONce called it will prompt the user to input the IDs they wish
-    to convert. The IDs will be converted and the NCBI IDs will be printed
-    to the screen
+    ID. Once called it will prompt the user to input the IDs they wish
+    to convert. The IDs will be converted and printed to the screen.
     
 """
     
