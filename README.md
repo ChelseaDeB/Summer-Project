@@ -1,1 +1,1 @@
-testin
+automatic information of proteins
