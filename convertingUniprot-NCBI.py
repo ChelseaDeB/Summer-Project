@@ -16,7 +16,7 @@ params = {
     'to' : 'P_REFSEQ_AC', #RefSeq Protein = NCBI protein 
                           # or P_ENTREZGENEID  NCBI gene
     'format': 'tab',
-    'query' : 'P40925 P40926 O43175 Q9UM73 P97793' #ACC+ID = UniProtKB AC/ID
+    'query' : 'Q239Q2 Q236L2 A4VDZ5' #ACC+ID = UniProtKB AC/ID
     }
 
 data = urllib.parse.urlencode(params)
