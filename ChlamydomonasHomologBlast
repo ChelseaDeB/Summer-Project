@@ -1,0 +1,11 @@
+#/bin/bash
+#bash script for Retrieving Seq from Uniprot ID
+uniprotId=$1
+
+echo curl https://www.uniprot.org/uniprot/${uniprotId}.fasta
+curl https://www.uniprot.org/uniprot/${uniprotId}.fasta > ${uniprotId}.fasta
+
+blastp -db refseq_protein -taxids 3055 -query ${unipritId}.fasta -outfmt 5  -out results.xml
+
+./FindingHomologs.py
+mv Homologs.txt resultsChlamydonas/$1.txt
